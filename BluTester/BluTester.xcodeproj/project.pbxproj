@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20B6C822B87AFFD00A3998E /* BluTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C812B87AFFD00A3998E /* BluTesterApp.swift */; };
+		B20B6C842B87AFFD00A3998E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C832B87AFFD00A3998E /* ContentView.swift */; };
+		B20B6C862B87AFFE00A3998E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20B6C852B87AFFE00A3998E /* Assets.xcassets */; };
+		B20B6C892B87AFFE00A3998E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20B6C882B87AFFE00A3998E /* Preview Assets.xcassets */; };
+		B20B6C932B87AFFE00A3998E /* BluTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C922B87AFFE00A3998E /* BluTesterTests.swift */; };
+		B20B6C9D2B87AFFE00A3998E /* BluTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C9C2B87AFFE00A3998E /* BluTesterUITests.swift */; };
+		B20B6C9F2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C9E2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift */; };
+		B20B6CAC2B87BB9700A3998E /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20B6C8F2B87AFFE00A3998E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20B6C762B87AFFD00A3998E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20B6C7D2B87AFFD00A3998E;
+			remoteInfo = BluTester;
+		};
+		B20B6C992B87AFFE00A3998E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20B6C762B87AFFD00A3998E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20B6C7D2B87AFFD00A3998E;
+			remoteInfo = BluTester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20B6C7E2B87AFFD00A3998E /* BluTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B6C812B87AFFD00A3998E /* BluTesterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterApp.swift; sourceTree = "<group>"; };
+		B20B6C832B87AFFD00A3998E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B20B6C852B87AFFE00A3998E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20B6C882B87AFFE00A3998E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B20B6C8E2B87AFFE00A3998E /* BluTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B6C922B87AFFE00A3998E /* BluTesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterTests.swift; sourceTree = "<group>"; };
+		B20B6C982B87AFFE00A3998E /* BluTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B6C9C2B87AFFE00A3998E /* BluTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterUITests.swift; sourceTree = "<group>"; };
+		B20B6C9E2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20B6C7B2B87AFFD00A3998E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B6C8B2B87AFFE00A3998E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B6C952B87AFFE00A3998E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20B6C752B87AFFD00A3998E = {
+			isa = PBXGroup;
+			children = (
+				B20B6C802B87AFFD00A3998E /* BluTester */,
+				B20B6C912B87AFFE00A3998E /* BluTesterTests */,
+				B20B6C9B2B87AFFE00A3998E /* BluTesterUITests */,
+				B20B6C7F2B87AFFD00A3998E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20B6C7F2B87AFFD00A3998E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6C7E2B87AFFD00A3998E /* BluTester.app */,
+				B20B6C8E2B87AFFE00A3998E /* BluTesterTests.xctest */,
+				B20B6C982B87AFFE00A3998E /* BluTesterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20B6C802B87AFFD00A3998E /* BluTester */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6C852B87AFFE00A3998E /* Assets.xcassets */,
+				B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */,
+				B20B6C812B87AFFD00A3998E /* BluTesterApp.swift */,
+				B20B6C832B87AFFD00A3998E /* ContentView.swift */,
+				B20B6C872B87AFFE00A3998E /* Preview Content */,
+			);
+			path = BluTester;
+			sourceTree = "<group>";
+		};
+		B20B6C872B87AFFE00A3998E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6C882B87AFFE00A3998E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B20B6C912B87AFFE00A3998E /* BluTesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6C922B87AFFE00A3998E /* BluTesterTests.swift */,
+			);
+			path = BluTesterTests;
+			sourceTree = "<group>";
+		};
+		B20B6C9B2B87AFFE00A3998E /* BluTesterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6C9C2B87AFFE00A3998E /* BluTesterUITests.swift */,
+				B20B6C9E2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift */,
+			);
+			path = BluTesterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20B6C7D2B87AFFD00A3998E /* BluTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B6CA22B87AFFE00A3998E /* Build configuration list for PBXNativeTarget "BluTester" */;
+			buildPhases = (
+				B20B6C7A2B87AFFD00A3998E /* Sources */,
+				B20B6C7B2B87AFFD00A3998E /* Frameworks */,
+				B20B6C7C2B87AFFD00A3998E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluTester;
+			productName = BluTester;
+			productReference = B20B6C7E2B87AFFD00A3998E /* BluTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20B6C8D2B87AFFE00A3998E /* BluTesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B6CA52B87AFFE00A3998E /* Build configuration list for PBXNativeTarget "BluTesterTests" */;
+			buildPhases = (
+				B20B6C8A2B87AFFE00A3998E /* Sources */,
+				B20B6C8B2B87AFFE00A3998E /* Frameworks */,
+				B20B6C8C2B87AFFE00A3998E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20B6C902B87AFFE00A3998E /* PBXTargetDependency */,
+			);
+			name = BluTesterTests;
+			productName = BluTesterTests;
+			productReference = B20B6C8E2B87AFFE00A3998E /* BluTesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20B6C972B87AFFE00A3998E /* BluTesterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B6CA82B87AFFE00A3998E /* Build configuration list for PBXNativeTarget "BluTesterUITests" */;
+			buildPhases = (
+				B20B6C942B87AFFE00A3998E /* Sources */,
+				B20B6C952B87AFFE00A3998E /* Frameworks */,
+				B20B6C962B87AFFE00A3998E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20B6C9A2B87AFFE00A3998E /* PBXTargetDependency */,
+			);
+			name = BluTesterUITests;
+			productName = BluTesterUITests;
+			productReference = B20B6C982B87AFFE00A3998E /* BluTesterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20B6C762B87AFFD00A3998E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					B20B6C7D2B87AFFD00A3998E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					B20B6C8D2B87AFFE00A3998E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = B20B6C7D2B87AFFD00A3998E;
+					};
+					B20B6C972B87AFFE00A3998E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = B20B6C7D2B87AFFD00A3998E;
+					};
+				};
+			};
+			buildConfigurationList = B20B6C792B87AFFD00A3998E /* Build configuration list for PBXProject "BluTester" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20B6C752B87AFFD00A3998E;
+			productRefGroup = B20B6C7F2B87AFFD00A3998E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20B6C7D2B87AFFD00A3998E /* BluTester */,
+				B20B6C8D2B87AFFE00A3998E /* BluTesterTests */,
+				B20B6C972B87AFFE00A3998E /* BluTesterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20B6C7C2B87AFFD00A3998E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B6C892B87AFFE00A3998E /* Preview Assets.xcassets in Resources */,
+				B20B6C862B87AFFE00A3998E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B6C8C2B87AFFE00A3998E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B6C962B87AFFE00A3998E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20B6C7A2B87AFFD00A3998E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B6C842B87AFFD00A3998E /* ContentView.swift in Sources */,
+				B20B6C822B87AFFD00A3998E /* BluTesterApp.swift in Sources */,
+				B20B6CAC2B87BB9700A3998E /* BluetoothViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B6C8A2B87AFFE00A3998E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B6C932B87AFFE00A3998E /* BluTesterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B6C942B87AFFE00A3998E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B6C9D2B87AFFE00A3998E /* BluTesterUITests.swift in Sources */,
+				B20B6C9F2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20B6C902B87AFFE00A3998E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20B6C7D2B87AFFD00A3998E /* BluTester */;
+			targetProxy = B20B6C8F2B87AFFE00A3998E /* PBXContainerItemProxy */;
+		};
+		B20B6C9A2B87AFFE00A3998E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20B6C7D2B87AFFD00A3998E /* BluTester */;
+			targetProxy = B20B6C992B87AFFE00A3998E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B20B6CA02B87AFFE00A3998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B20B6CA12B87AFFE00A3998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20B6CA32B87AFFE00A3998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BluTester/Preview Content\"";
+				DEVELOPMENT_TEAM = Z729D9DEF5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow bluetooth usage for testing";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow bluetooth usage for testing";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knapsoft.BluTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20B6CA42B87AFFE00A3998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BluTester/Preview Content\"";
+				DEVELOPMENT_TEAM = Z729D9DEF5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow bluetooth usage for testing";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow bluetooth usage for testing";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knapsoft.BluTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B20B6CA62B87AFFE00A3998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z729D9DEF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knapsoft.BluTesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluTester.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluTester";
+			};
+			name = Debug;
+		};
+		B20B6CA72B87AFFE00A3998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z729D9DEF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knapsoft.BluTesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluTester.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluTester";
+			};
+			name = Release;
+		};
+		B20B6CA92B87AFFE00A3998E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z729D9DEF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knapsoft.BluTesterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BluTester;
+			};
+			name = Debug;
+		};
+		B20B6CAA2B87AFFE00A3998E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z729D9DEF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knapsoft.BluTesterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BluTester;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20B6C792B87AFFD00A3998E /* Build configuration list for PBXProject "BluTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B6CA02B87AFFE00A3998E /* Debug */,
+				B20B6CA12B87AFFE00A3998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20B6CA22B87AFFE00A3998E /* Build configuration list for PBXNativeTarget "BluTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B6CA32B87AFFE00A3998E /* Debug */,
+				B20B6CA42B87AFFE00A3998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20B6CA52B87AFFE00A3998E /* Build configuration list for PBXNativeTarget "BluTesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B6CA62B87AFFE00A3998E /* Debug */,
+				B20B6CA72B87AFFE00A3998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20B6CA82B87AFFE00A3998E /* Build configuration list for PBXNativeTarget "BluTesterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B6CA92B87AFFE00A3998E /* Debug */,
+				B20B6CAA2B87AFFE00A3998E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20B6C762B87AFFD00A3998E /* Project object */;
+}
