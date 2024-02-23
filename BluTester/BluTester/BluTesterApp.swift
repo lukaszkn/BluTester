@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftUILogger
+
+let logger = SwiftUILogger(name: "Log")
 
 @main
 struct BluTesterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DevicesView()
         }
     }
 }

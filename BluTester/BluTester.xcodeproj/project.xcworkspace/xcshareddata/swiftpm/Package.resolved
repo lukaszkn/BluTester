@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftuilogger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0xLeif/SwiftUILogger.git",
+      "state" : {
+        "revision" : "11708666395ae735580b229dc3bab22ea2abb7a3",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

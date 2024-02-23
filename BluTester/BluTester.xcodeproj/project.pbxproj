@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B20B6C822B87AFFD00A3998E /* BluTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C812B87AFFD00A3998E /* BluTesterApp.swift */; };
-		B20B6C842B87AFFD00A3998E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C832B87AFFD00A3998E /* ContentView.swift */; };
+		B20B6C842B87AFFD00A3998E /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C832B87AFFD00A3998E /* DevicesView.swift */; };
 		B20B6C862B87AFFE00A3998E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20B6C852B87AFFE00A3998E /* Assets.xcassets */; };
 		B20B6C892B87AFFE00A3998E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20B6C882B87AFFE00A3998E /* Preview Assets.xcassets */; };
 		B20B6C932B87AFFE00A3998E /* BluTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C922B87AFFE00A3998E /* BluTesterTests.swift */; };
 		B20B6C9D2B87AFFE00A3998E /* BluTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C9C2B87AFFE00A3998E /* BluTesterUITests.swift */; };
 		B20B6C9F2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6C9E2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift */; };
 		B20B6CAC2B87BB9700A3998E /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */; };
+		B20B6CAE2B88CB8E00A3998E /* SendTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B6CAD2B88CB8E00A3998E /* SendTextView.swift */; };
+		B20B6CB32B88D1E500A3998E /* SwiftUILogger in Frameworks */ = {isa = PBXBuildFile; productRef = B20B6CB22B88D1E500A3998E /* SwiftUILogger */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B20B6C7E2B87AFFD00A3998E /* BluTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20B6C812B87AFFD00A3998E /* BluTesterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterApp.swift; sourceTree = "<group>"; };
-		B20B6C832B87AFFD00A3998E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B20B6C832B87AFFD00A3998E /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		B20B6C852B87AFFE00A3998E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20B6C882B87AFFE00A3998E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B20B6C8E2B87AFFE00A3998E /* BluTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,7 @@
 		B20B6C9C2B87AFFE00A3998E /* BluTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterUITests.swift; sourceTree = "<group>"; };
 		B20B6C9E2B87AFFE00A3998E /* BluTesterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluTesterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+		B20B6CAD2B88CB8E00A3998E /* SendTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20B6CB32B88D1E500A3998E /* SwiftUILogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +100,10 @@
 		B20B6C802B87AFFD00A3998E /* BluTester */ = {
 			isa = PBXGroup;
 			children = (
+				B20B6CB52B88EB2000A3998E /* ViewModel */,
+				B20B6CB42B88EB0E00A3998E /* Views */,
 				B20B6C852B87AFFE00A3998E /* Assets.xcassets */,
-				B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */,
 				B20B6C812B87AFFD00A3998E /* BluTesterApp.swift */,
-				B20B6C832B87AFFD00A3998E /* ContentView.swift */,
 				B20B6C872B87AFFE00A3998E /* Preview Content */,
 			);
 			path = BluTester;
@@ -130,6 +134,23 @@
 			path = BluTesterUITests;
 			sourceTree = "<group>";
 		};
+		B20B6CB42B88EB0E00A3998E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6C832B87AFFD00A3998E /* DevicesView.swift */,
+				B20B6CAD2B88CB8E00A3998E /* SendTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B20B6CB52B88EB2000A3998E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6CAB2B87BB9700A3998E /* BluetoothViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +167,9 @@
 			dependencies = (
 			);
 			name = BluTester;
+			packageProductDependencies = (
+				B20B6CB22B88D1E500A3998E /* SwiftUILogger */,
+			);
 			productName = BluTester;
 			productReference = B20B6C7E2B87AFFD00A3998E /* BluTester.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +242,9 @@
 				Base,
 			);
 			mainGroup = B20B6C752B87AFFD00A3998E;
+			packageReferences = (
+				B20B6CB12B88D1E500A3998E /* XCRemoteSwiftPackageReference "SwiftUILogger" */,
+			);
 			productRefGroup = B20B6C7F2B87AFFD00A3998E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,9 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20B6C842B87AFFD00A3998E /* ContentView.swift in Sources */,
+				B20B6C842B87AFFD00A3998E /* DevicesView.swift in Sources */,
 				B20B6C822B87AFFD00A3998E /* BluTesterApp.swift in Sources */,
 				B20B6CAC2B87BB9700A3998E /* BluetoothViewModel.swift in Sources */,
+				B20B6CAE2B88CB8E00A3998E /* SendTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B20B6CB12B88D1E500A3998E /* XCRemoteSwiftPackageReference "SwiftUILogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/SwiftUILogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B20B6CB22B88D1E500A3998E /* SwiftUILogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20B6CB12B88D1E500A3998E /* XCRemoteSwiftPackageReference "SwiftUILogger" */;
+			productName = SwiftUILogger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B20B6C762B87AFFD00A3998E /* Project object */;
 }
