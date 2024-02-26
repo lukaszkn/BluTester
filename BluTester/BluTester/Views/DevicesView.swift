@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftUILogger
 
 struct DevicesView: View {
-    @ObservedObject private var viewModel = BluetoothViewModel()
+    @StateObject private var viewModel = BluetoothViewModel()
     
     init() {
         logger.log(level: .info, message: "init")
@@ -42,6 +42,7 @@ struct DevicesView: View {
                     Label("Log", systemImage: "ladybug")
                 }
         }
+        .environmentObject(viewModel)
     }
 }
 

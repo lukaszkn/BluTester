@@ -12,7 +12,8 @@ import CoreBluetooth
 class BluetoothViewModel: NSObject, ObservableObject {
     private var manager: CBCentralManager?
     @Published var devices: [CBPeripheral] = []
-    var connectedPeripheral: CBPeripheral?
+    @Published var connectedPeripheral: CBPeripheral?
+    private var transferCharacteristic: CBCharacteristic?
     
     override init() {
         super.init()
@@ -21,6 +22,20 @@ class BluetoothViewModel: NSObject, ObservableObject {
     
     func connect(device: CBPeripheral) {
         manager?.connect(device)
+    }
+    
+    func subscribeToNotifications(peripheral: CBPeripheral, characteristic: CBCharacteristic) {
+        peripheral.setNotifyValue(true, for: characteristic)
+    }
+    
+    func sendLcdText(text: String) {
+        if let peripheral = connectedPeripheral, let characteristic = transferCharacteristic, !text.isEmpty {
+            let newText = "$ok,"
+                .appending(text)
+                .appending("\n")
+                
+            peripheral.writeValue(newText.data(using: .utf8)!, for: characteristic, type: .withResponse)
+        }
     }
 }
 
@@ -103,7 +118,17 @@ extension BluetoothViewModel: CBPeripheralDelegate {
         // From here, can read/write to characteristics or subscribe to notifications as desired.
         
         for characteristic in characteristics {
+            print("characteristic \(characteristic) canSend = \(peripheral.canSendWriteWithoutResponse)")
             peripheral.discoverDescriptors(for: characteristic)
+            
+            if characteristic.properties.contains(.write) {
+                self.transferCharacteristic = characteristic
+                
+                let data = "CON\n".data(using: .utf8)!
+                peripheral.writeValue(data, for: characteristic, type: .withoutResponse)
+            }
+            
+            subscribeToNotifications(peripheral: peripheral, characteristic: characteristic)
         }
     }
     
@@ -153,4 +178,24 @@ extension BluetoothViewModel: CBPeripheralDelegate {
             break
         }
     }
+    
+    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+        print("didUpdateValueFor \(characteristic)")
+        
+        guard let characteristicData = characteristic.value,
+            let stringFromData = String(data: characteristicData, encoding: .utf8) else { return }
+        
+        print("value = \(stringFromData) from \(characteristic)")
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+        if let error = error {
+            // Handle error
+            print("didWriteValueFor error \(error)")
+            return
+        }
+        // Successfully wrote value to characteristic
+        print("Successfully wrote value to characteristic \(characteristic)")
+    }
+    
 }

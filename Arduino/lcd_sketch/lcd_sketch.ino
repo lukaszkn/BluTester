@@ -15,7 +15,7 @@ SoftwareSerial bbmSerial(2, 3); // RX, TX
 
 void setup() {
   lcd.begin(16, 2);
-  lcd.print("Test");
+  lcd.print("init");
 
   setupBB();
 }
@@ -34,7 +34,7 @@ void setupBB() {
   Serial.begin(9600) ;
   while(!Serial) ;
 
-  Serial.println("\n\nSTART BBMOBILE DEMO APP") ;  
+  Serial.println("\n\nSTART BluTester APP") ;  
 
   // set the data rate for the BBMobile Software Serial port and set size of bbm_buf
   bbmSerial.begin(9600) ;
@@ -55,15 +55,11 @@ void setupBB() {
   //-set BBMobile modules name
   //----------------------------------  
   Serial.print("Setting mobile name - ") ;  
-  if(BBMobileSend(&bbmSerial, "<name,ARDUINO DEMO APP"))
+  if(BBMobileSend(&bbmSerial, "<name,BluTester APP"))
   {
     Serial.println("err") ;
   } else Serial.println("OK") ;  
 
-  //-set BBMobile modules PIN
-  //----------------------------------    
-  //Serial.print("Setting PIN - ") ;    
-  //if( BBMobileSend(&bbmSerial, "<pin,123") )  //-set PIN to 123  
   Serial.print("Setting no PIN - ") ;    
   if( BBMobileSend(&bbmSerial, "<pin,0") )  //-delete PIN
   {
@@ -72,6 +68,43 @@ void setupBB() {
 }
 
 void loop() {
-  //lcd.setCursor(0, 1);
-  //lcd.print(millis() / 1000);
+  //-wait for Bluetooth LE connection
+  //----------------------------------    
+  Serial.print("Waiting for App connection...");
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Awaiting text...");
+
+  do {
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    delay(900) ;    
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(100) ;             
+    BBMobileGetMessage(&bbmSerial) ;
+  } while(BBMobileIsConnected() == 0) ;
+  Serial.println("OK") ; 
+
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Connected");
+
+  //-play with interface
+  //------------------------------------
+  while(BBMobileIsConnected())
+  {
+    delay(100) ;
+
+    //-get messages from mobile interface
+    //------------------------------------
+    while(BBMobileGetMessage(&bbmSerial) > 0)
+    {
+      lcd.clear();
+      lcd.setCursor(0, 0);
+      lcd.print(bbm_buf.substring(4));
+    };
+  };    
+
+  //-Here Bluetooth LE is disconnected
+  //----------------------------------    
+  Serial.println("App disconnected") ;  
 }

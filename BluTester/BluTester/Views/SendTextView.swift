@@ -10,8 +10,15 @@ import CoreBluetooth
 
 struct SendTextView: View {
     
-    var selectedDevice: CBPeripheral?
+    @EnvironmentObject private var viewModel: BluetoothViewModel
     @State private var textToSend: String = ""
+    
+    var sampleTexts = [
+        "Hello world!",
+        "Greetings",
+        "Hello .intent",
+        "Ala ma kota"
+    ]
     
     var body: some View {
         ZStack {
@@ -20,17 +27,21 @@ struct SendTextView: View {
                 Form {
                     TextField("Text to display on LCD", text: $textToSend)
                     
-                    Button("Send to \(selectedDevice?.name ?? "(connect to device first)")") {
-                        
+                    Button("Send to \(viewModel.connectedPeripheral?.name ?? "(connect to device first)")") {
+                        viewModel.sendLcdText(text: textToSend)
+                        viewModel.sendLcdText(text: textToSend)
                     }
-                    .disabled(selectedDevice == nil)
+                    .disabled(viewModel.connectedPeripheral == nil)
                 }
                 .frame(height: 150)
                 
                 List {
                     Section(header: Text("Tap on sample text")) {
-                        Text("Hello world!")
-                        Text("Greetings master")
+                        ForEach(sampleTexts, id: \.self) { text in
+                            Text(text).onTapGesture {
+                                textToSend = text
+                            }
+                        }
                     }
                 }
                 

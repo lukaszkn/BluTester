@@ -15,7 +15,7 @@
   String bbm_buf ;
   byte bbm_conn ;
 
-//#define DEBUG_ACK  //-you must do Serial.begin in setup() before using this
+#define DEBUG_ACK  //-you must do Serial.begin in setup() before using this
 
 //===========================================================================================
 //-------gets
@@ -116,6 +116,7 @@ byte BBMobileSend(Stream *bbm, String s)
 //===========================================================================================
 byte BBMobileSendJson(Stream *bbm, char *j)
 {
+  Serial.println("BBMobileSendJson: ") ;
   char bb ;
   while(1)
   {
